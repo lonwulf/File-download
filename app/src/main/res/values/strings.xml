@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Download</string>
-    <string name="file_provider_authority" translatable="false">com.copia.delivery.fileprovider</string>
+    <string name="file_provider_authority" translatable="false">com.kenneth.kihanya.download.fileprovider</string>
 </resources>

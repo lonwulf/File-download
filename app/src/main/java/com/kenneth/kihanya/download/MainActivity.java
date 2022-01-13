@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.appbar_copia_logo)
-                .setContentTitle("Copia Delivery")
+                .setContentTitle("Content title")
                 .setContentText("Downloading File")
                 .setAutoCancel(true);
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         notificationManager.notify(0, notificationBuilder.build());
 
         File apkFile = new File(Environment.getExternalStorageDirectory() + "/DOWNLOAD/" +
-                "copia-delivery.apk");
+                "myApk.apk");
         if (apkFile.exists()) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 Toast.makeText(this, "Download Complete. Tap to install", Toast.LENGTH_SHORT).show();
